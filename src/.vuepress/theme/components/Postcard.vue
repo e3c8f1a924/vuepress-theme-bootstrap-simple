@@ -1,5 +1,5 @@
 <template>
-    <div class="postcard">{{  }}
+    <div class="postcard">
         <b-card footer-tag="footer" no-body>
             <b-card-body>
                 <b-card-title>{{ post.title }}</b-card-title>

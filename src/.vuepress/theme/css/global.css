@@ -10,3 +10,6 @@ blockquote{
 .hljs{
     padding: 1em;
 }
+.none-select{
+    user-select: none;
+}
