@@ -1,0 +1,22 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "vuepress-theme-bootstrap-simple-test",
+    "home_page_url": "https://bambusoideae.cn/",
+    "feed_url": "https://bambusoideae.cn/feed.json",
+    "description": "A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog.",
+    "items": [
+        {
+            "id": "https://bambusoideae.cn/1900/01/01/test-copy/",
+            "url": "https://bambusoideae.cn/1900/01/01/test-copy/",
+            "title": "Test",
+            "summary": "A quick brown fox jumps over the lazy dog.",
+            "date_modified": "1899-12-31T15:54:17.000Z"
+        },
+        {
+            "id": "https://bambusoideae.cn/1900/01/01/test/",
+            "url": "https://bambusoideae.cn/1900/01/01/test/",
+            "title": "Test",
+            "date_modified": "1899-12-31T15:54:17.000Z"
+        }
+    ]
+}
