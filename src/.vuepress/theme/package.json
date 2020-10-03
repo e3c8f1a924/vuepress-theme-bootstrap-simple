@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
-    "prepare": "cp package.json ./src/.vuepress/theme/package.json && cd ./src/.vuepress/theme/"
+    "cp": "cp package.json ./src/.vuepress/theme/package.json"
   },
   "repository": {
     "type": "git",
