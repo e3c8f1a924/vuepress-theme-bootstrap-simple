@@ -25,7 +25,8 @@ module.exports=(themeConfig,ctx)=>{
     return{
         globalLayout: "./layouts/GlobalLayout.vue",
         plugins: [
-            ["@vuepress/blog",pluginOptions]
+            ["@vuepress/blog",pluginOptions],
+            ["@vuepress/last-updated"]
         ]
     }
 }
