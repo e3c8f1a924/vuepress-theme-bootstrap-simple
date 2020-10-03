@@ -15,7 +15,7 @@
             </b-row>
             <b-row><hr></b-row>
             <b-row>
-                <b-col><div class="info">Theme: <a>bootstrap-simple</a></div></b-col>
+                <b-col><div class="info">Theme: <a href="https://github.com/Bambusaceae/vuepress-theme-bootstrap-simple">bootstrap-simple</a></div></b-col>
             </b-row>
         </b-container>
     </div>
