@@ -15,7 +15,7 @@ import './css/global.css'
 
 Vue.directive('highlight',(el)=>{
 	let blocks=el.querySelectorAll('pre code');
-	blocks.forEach((block)=>{hljs.highlightBlock(block);});console.log('debug');
+	blocks.forEach((block)=>{hljs.highlightBlock(block);});
 });
 
 export default ({

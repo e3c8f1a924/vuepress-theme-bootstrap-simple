@@ -15,7 +15,8 @@
                     <span v-if="post.lastUpdated">{{ lastUpdated }}</span>
                 </b-list-group-item>
             </b-list-group>
-            <template v-slot:footer>
+            <template v-slot:footer v-if="post.frontmatter.tag || post.frontmatter.tags">
+                <b-icon icon="tags" font-scale="1" v-if="post.frontmatter.time"></b-icon>
                 <div class="tag-badge" v-for="tag in post.frontmatter.tag">
                     <b-button size="sm" variant="primary" :href="base+'tag/'+tag">
                         {{ tag }}

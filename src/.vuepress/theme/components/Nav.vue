@@ -1,21 +1,24 @@
 <template>
-    <b-navbar type="dark" v-bind:sticky="true" id="nav">
+    <b-navbar type="dark" toggleable="lg" v-bind:sticky="true" id="nav">
         <b-navbar-brand>
             <img v-if="this.$site.themeConfig.preferences.avatar != null" :src="this.$site.themeConfig.preferences.avatar" class="avatar"/>
             <div class="title">{{ title }}</div>
         </b-navbar-brand>
-        <b-navbar-nav>
-            <b-nav-item-dropdown text="Feed" v-if="this.$service.feed.rss || this.$service.feed.atom || this.$service.feed.json">
-                <b-dropdown-item :href="this.$site.base+'rss.xml'" v-if="this.$service.feed.rss">RSS</b-dropdown-item>
-                <b-dropdown-item :href="this.$site.base+'feed.atom'" v-if="this.$service.feed.atom">Atom</b-dropdown-item>
-                <b-dropdown-item :href="this.$site.base+'feed.json'" v-if="this.$service.feed.json">JSON</b-dropdown-item>
-            </b-nav-item-dropdown>
-        </b-navbar-nav>
-        <b-navbar-nav class="ml-auto">
-            <b-nav-item :href="this.$site.base">Home</b-nav-item>
-            <b-nav-item :href="this.$site.base+'tag/'">Tags</b-nav-item>
-            <b-nav-item v-for="link in this.$site.themeConfig.preferences.navlinks" :href="link.href">{{ link.title }}</b-nav-item>
-        </b-navbar-nav>
+        <b-navbar-toggle target="collapse"></b-navbar-toggle>
+        <b-collapse id="collapse" is-nav>
+            <b-navbar-nav>
+                <b-nav-item-dropdown text="Feed" v-if="this.$service.feed.rss || this.$service.feed.atom || this.$service.feed.json">
+                    <b-dropdown-item :href="this.$site.base+'rss.xml'" v-if="this.$service.feed.rss">RSS</b-dropdown-item>
+                    <b-dropdown-item :href="this.$site.base+'feed.atom'" v-if="this.$service.feed.atom">Atom</b-dropdown-item>
+                    <b-dropdown-item :href="this.$site.base+'feed.json'" v-if="this.$service.feed.json">JSON</b-dropdown-item>
+                </b-nav-item-dropdown>
+                <b-nav-item :href="this.$site.base">Home</b-nav-item>
+                <b-nav-item :href="this.$site.base+'tag/'">Tags</b-nav-item>
+            </b-navbar-nav>
+            <b-navbar-nav class="ml-auto">
+                <b-nav-item v-for="link in this.$site.themeConfig.preferences.navlinks" :href="link.href">{{ link.title }}</b-nav-item>
+            </b-navbar-nav>
+        </b-collapse>
     </b-navbar>
 </template>
 <script>
