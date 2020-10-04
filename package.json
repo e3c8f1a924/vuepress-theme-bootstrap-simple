@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-bootstrap-simple",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A blog theme based on Vuepress.",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "dayjs": "^1.9.1",
     "gitalk": "^1.6.2",
     "highlight.js": "^10.2.0",
+    "md5": "^2.3.0",
     "vuepress": "^1.6.0"
   },
   "devDependencies": {

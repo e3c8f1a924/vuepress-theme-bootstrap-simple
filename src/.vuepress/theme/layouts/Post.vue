@@ -23,7 +23,7 @@
           </div>
         </div>
       </div>
-      <Comment v-if="this.$site.themeConfig.preferences.gitalk"/>
+      <Comment :post="this.$page" v-if="this.$site.themeConfig.preferences.gitalk"/>
     </b-container>
   </div>
 </template>
