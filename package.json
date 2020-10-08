@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-bootstrap-simple",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A blog theme based on Vuepress.",
   "main": "index.js",
   "scripts": {
@@ -23,17 +23,15 @@
   },
   "homepage": "https://github.com/Bambusaceae/vuepress-theme-bootstrap-simple#readme",
   "dependencies": {
+	"@vuepress/plugin-blog": "^1.9.2",
     "bootstrap-vue": "^2.16.0",
+	"commander": "^6.1.0",
     "dayjs": "^1.9.1",
+	"esm": "^3.2.25",
     "gitalk": "^1.6.2",
     "highlight.js": "^10.2.0",
+	"jquery": "^3.5.1",
     "md5": "^2.3.0",
     "vuepress": "^1.6.0"
-  },
-  "devDependencies": {
-    "@vuepress/plugin-blog": "^1.9.2",
-    "commander": "^6.1.0",
-    "esm": "^3.2.25",
-    "jquery": "^3.5.1"
   }
 }
