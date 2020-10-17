@@ -2,7 +2,7 @@
     <b-navbar type="dark" toggleable="lg" v-bind:sticky="true" id="nav">
         <b-navbar-brand>
             <img v-if="this.$site.themeConfig.preferences.avatar != null" :src="this.$site.themeConfig.preferences.avatar" class="avatar"/>
-            <div class="title">{{ title }}</div>
+            <h1 class="title">{{ title }}</h1>
         </b-navbar-brand>
         <b-navbar-toggle target="collapse"></b-navbar-toggle>
         <b-collapse id="collapse" is-nav>
@@ -45,6 +45,7 @@ export default {
     height: 30px;
 }
 .title{
+    font-size: 1.25rem;
     padding-left: .5em;
     display: inline;
 }

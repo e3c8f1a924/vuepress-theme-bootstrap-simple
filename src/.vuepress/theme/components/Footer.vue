@@ -3,13 +3,13 @@
         <b-container>
             <b-row>
                 <b-col>
-                    <h1>Links</h1>
+                    <div class="footer-title">Links</div>
                     <b-row v-for="link in this.$site.themeConfig.preferences.links">
                         <b-col><a :href="link.href">{{ link.title }}</a></b-col>
                     </b-row>
                 </b-col>
                 <b-col>
-                    <h1>Description</h1>
+                    <div class="footer-title">Description</div>
                     <p>{{ this.$site.description }}</p>
                 </b-col>
             </b-row>
@@ -33,10 +33,11 @@ export default {
     padding: 4rem 0 4rem 0;
     color: #ddd;
 }
-#footer h1{
+.footer-title{
     text-align: center;
     font-size: 24px;
     color: #fff !important;
+    margin-bottom: 10px;
 }
 #footer a{
     color: #ddd;
