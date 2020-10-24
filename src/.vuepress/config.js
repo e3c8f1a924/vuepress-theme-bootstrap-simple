@@ -24,6 +24,12 @@ module.exports = {
 				{title: "GitHub",href: "https://github.com/Bambusaceae/vuepress-theme-bootstrap-simple"},
 				{title: "Report",href: "https://github.com/Bambusaceae/vuepress-theme-bootstrap-simple/issues"}
 			],
+			source: {
+				show: true,
+				srcDir: "https://github.com/Bambusaceae/vuepress-theme-bootstrap-simple/tree/master/src/",
+				history: true,
+				historyDir: "https://github.com/Bambusaceae/vuepress-theme-bootstrap-simple/commits/master/src/"
+			},
 			gitalk: {
 				test: "test"
 			}
